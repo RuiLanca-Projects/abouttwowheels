@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
   <meta charset="UTF-8" />
@@ -17,26 +17,29 @@
 <body>
   <main id="inicio" class="text-center">
     <img src="./Img/Original on Transparent.png" alt="nome-empresa" id="img-titulo" width="500" height="250"
-      style="margin-top: 50px" />
+      style="margin-top: 80px" />
     <br><br>
-    <div class="clica-me">
-      <h3 id="click-me">Click me!</h3>
-      <br>
-      <img src="./Img/seta.png" width="50" height="40" id="img-click">
-    </div>
+    
     <div class="botoes">
-      <button type="button" onclick="moveAndNavigate('inicio.html')" id="btn-inicio">
+      <button type="button" id="btn-inicio">
         <img src="./Img/image.jpg" width="120" height="90" />
       </button>
-
     </div>
+    <div class="botoes1" id="btn-inicio">
+      <button type="button" >
+        <img src="./Img/image.jpg" width="120" height="90" />
+      </button>
+    </div>
+   
     <br />
-    <div id="cookie-banner"
-      style="background-color: #f0f0f0; padding: 10px; position: fixed; bottom: 0; left: 0; width: 100%; text-align: center;">
-      <img src="./Img/hd-cookie-icon.svg" style="width: 30px;height: 30px;">
-      Este site utiliza cookies para garantir a melhor experiência. <a href="cookies.php" id="link-banner">Saiba
-        mais</a> | <button onclick="aceitarCookies()">Aceitar</button>
-    </div>
+     
+  </main>
+  <div class="footer"></div>
+  
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
   </main>
   <div class="footer"></div>
   <script src="./js/main.js"></script>
