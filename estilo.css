@@ -91,30 +91,13 @@ body{
 }
 
 
-
-
-#btn-inicio{
-    margin: 20px;
-    border: none;
-    cursor: pointer;
+.botoes button{   
+    border: none;    
     appearance: none;
-    background-color: transparent;
-    animation: saltar 0.75s infinite;
+    background-color: transparent;   
+    
 }
 
-@keyframes saltar {
-    0% {
-transform: scale(1,1) translate(0px, 0px);
-}
-
-10%{
-transform: scale(1,0.95) translate(0px, 0px); 
-}
-
-100% {
-transform: scale(1,1) translate(0px, 0px);
-}
-}
 
 
 .imagem{
@@ -342,43 +325,49 @@ transform: scale(1,1) translate(0px, 0px);
     color: #d4331a;
   }
 
-  .botoes {   
-    animation: slidedaEsquerda 1s forwards;
+  .botoes {    
     display: flex;
-    justify-content: center;
-    margin-top: -10px;
+    justify-content: center;   
+    
+  } 
+
+  .botoes button{
+    animation: slidedaEsquerda 1.3s forwards;  
+    
   }
-  
-  .botoes button {
-    animation: efeitoTravao 2s forwards;
+
+  .botoes1 button{   
+    border: none;    
+    appearance: none;
+    background-color: transparent;   
+  }
+
+    
+  .botoes1 {
+    display: none;     
+    animation: moveRightAndDisappear 2s forwards; 
+    animation-delay: 1.5s;        
+    
   }
   
 
   @keyframes slidedaEsquerda {
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(0);
-    }
-  }
-  
-  @keyframes efeitoTravao {
     0% {
-      transform: translateX(0);
+      transform: translateX(-500%);
     }
-    50% {
-      transform: translateX(40%);
-    }
+    
     100% {
-      transform: translateX(0);
+      transform: translateX(0%);
+      
     }
   }
 
+
   @keyframes moveRightAndDisappear {
     0% {
-      transform: translateX(0);
+      transform: translateX(0%);
       opacity: 1;
+      rotate: 45;
     }
     90% {
         transform: translateX(calc(100vw - 30px));
