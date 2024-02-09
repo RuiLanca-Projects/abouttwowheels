@@ -26,13 +26,28 @@ function aceitarCookies() {
 
 }
 
-function moveAndNavigate(url) {
-  const buttons = document.querySelectorAll('.botoes button');
-  buttons.forEach(button => {
-    button.style.animation = 'moveRightAndDisappear 1s forwards';
-  });
+document.addEventListener("DOMContentLoaded", function() {  
+  
+  var elementoaesconder = document.querySelector(".botoes");
+  
+  setTimeout(function() {
+    elementoaesconder.style.display = "none";
+  }, 2000); 
+});
+document.addEventListener("DOMContentLoaded", function() {
+  
+  var elementoaesconder = document.querySelector(".botoes1");
+  
+  setTimeout(function() {
+    elementoaesconder.style.display = "block";
+  }, 2000); 
+});
 
-  setTimeout(() => {
-    window.location.href = url;
-  }, 300); 
+if (window.location.href.endsWith('index.php')) {  
+  window.onload = function() {
+    setTimeout(function() {
+      window.location.href = 'inicio.php';
+    }, 4300); 
+  };
 }
+
