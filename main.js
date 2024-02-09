@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
 if (window.location.href.endsWith('index.php')) {  
   window.onload = function() {
     setTimeout(function() {
-      window.location.href = 'inicio.php';
+      window.location.href = 'inicio.html';
     }, 4300); 
   };
 }
