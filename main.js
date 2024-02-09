@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }, 2000); 
 });
 
-if (window.location.href.endsWith('index.php')) {  
+if (window.location.href.endsWith('index.html')) {  
   window.onload = function() {
     setTimeout(function() {
       window.location.href = 'inicio.html';
