@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }, 2000); 
 });
 
-if (window.location.href.endsWith('abouttwowheels/' || 'index.html')) {  
+if (window.location.href.endsWith('abouttwowheels/') || window.location.href.endsWith('index.html'))) {  
   console.log("Olá")
   window.onload = function() {
     setTimeout(function() {
