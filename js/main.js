@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 if (window.location.href.endsWith('index.html')) {  
+  console.log("Olá")
   window.onload = function() {
     setTimeout(function() {
       window.location.href = 'inicio.html';
